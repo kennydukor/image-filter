@@ -38,7 +38,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   } );
   
 
-  app.get("/filteredimage", async(req, res) => {
+  app.get("/filteredimage", async(req:express.Request, res:express.Response) => {
 
     try {
       let {image_url} = req.query;
@@ -46,7 +46,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
         res.status(400).send("URL is empty")
       }
       else {
-        let image_path = await filterImageFromURL(image_url)
+        let image_path:string = await filterImageFromURL(image_url)
         res.sendFile(image_path, () => {
           deleteLocalFiles([image_path])
         })
