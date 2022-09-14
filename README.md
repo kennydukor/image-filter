@@ -48,6 +48,10 @@ Add your own domain name and have it point to the running services (try adding a
 > !NOTE: Domain names are not included in AWS’ free tier and will incur a cost.
 # image-filter
 
+### AWS Dashboard Screenshot
+
+![dashboard](https://github.com/kennydukor/image-filter/blob/main/Screen%20Shot%202022-09-14%20at%2018.30.21.png)
+
 ### Link to endpoint URL
 - Base URL: Udagram-dev2222222.us-east-1.elasticbeanstalk.com
 For test: 
